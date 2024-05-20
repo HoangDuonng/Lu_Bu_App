@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LuBu App</string>
+    <string name="today">Today</string>
+    <string name="best_platfo">Best platform for creating to-do lists</string>
+    <string name="tap_plus_to">Tap plus to create a new task</string>
+    <string name="add_your_ta">Add your task</string>
+    <string name="today_mon_2">Today . Mon 20 Jul 2022</string>
+</resources>
