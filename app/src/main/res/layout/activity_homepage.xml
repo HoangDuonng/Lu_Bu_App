@@ -7,7 +7,7 @@
     android:layout_width="375dp"
     android:layout_height="812dp"
     android:background="#FFFFFF"
-    tools:context=".MainActivity">
+    tools:context=".HomePageActivity">
 
     <RelativeLayout
         android:id="@+id/title"
@@ -133,16 +133,17 @@
                 <View
                     android:id="@+id/vector_2"
                     android:layout_width="295dp"
-                    android:layout_height="0dp"
+                    android:layout_height="2dp"
                     android:background="@drawable/vector_2"
                     />
                 <RelativeLayout
                     android:id="@+id/frame_14"
                     android:layout_width="295dp"
-                    android:layout_height="20dp">
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp">
                     <TextView
                         android:id="@+id/add_your_ta"
-                        android:layout_width="69dp"
+                        android:layout_width="75dp"
                         android:layout_height="20dp"
                         android:text="@string/add_your_ta"
                         android:textAppearance="@style/add_your_ta"
@@ -153,14 +154,14 @@
                         />
                     <TextView
                         android:id="@+id/today_mon_2"
-                        android:layout_width="125dp"
+                        android:layout_width="165dp"
                         android:layout_height="20dp"
                         android:text="@string/today_mon_2"
                         android:textAppearance="@style/today_mon_2"
                         android:fontFamily="@font/sfprodisplayregular"
                         android:layout_alignBaseline="@id/add_your_ta"
                         android:layout_toEndOf="@id/add_your_ta"
-                        android:layout_marginStart="90dp"
+                        android:layout_marginStart="80dp"
                         android:lineSpacingExtra="6sp"
                         android:translationY="-2.84sp"
                         android:gravity="top"

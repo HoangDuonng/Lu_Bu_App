@@ -4,5 +4,7 @@
     <string name="best_platfo">Best platform for creating to-do lists</string>
     <string name="tap_plus_to">Tap plus to create a new task</string>
     <string name="add_your_ta">Add your task</string>
-    <string name="today_mon_2">Today . Mon 20 Jul 2022</string>
+    <string name="today_mon_2">Today. Tues 21 May 2024</string>
+    <string name="eg_meeting_">eg : Reply Email</string>
+    <string name="description">Description</string>
 </resources>
