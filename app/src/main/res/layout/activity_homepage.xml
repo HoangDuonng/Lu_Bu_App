@@ -4,19 +4,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_page"
-    android:layout_width="375dp"
-    android:layout_height="812dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".HomePageActivity">
 
     <RelativeLayout
         android:id="@+id/title"
-        android:layout_width="327dp"
+        android:layout_width="match_parent"
         android:layout_height="57dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="24dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="68dp">
+        android:layout_marginTop="68dp"
+        android:layout_marginRight="24dp">
         <RelativeLayout
             android:id="@+id/create_task"
             android:layout_width="209dp"
@@ -65,10 +66,11 @@
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/card_"
-        android:layout_width="327dp"
+        android:layout_width="match_parent"
         android:layout_height="148dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="155dp"
         android:clipToOutline="true"
@@ -76,7 +78,7 @@
         android:elevation="40dp">
         <View
             android:id="@+id/rectangle_9"
-            android:layout_width="327dp"
+            android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -84,15 +86,16 @@
         />
         <RelativeLayout
             android:id="@+id/frame_104"
-            android:layout_width="295dp"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="16dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="52dp">
+            android:layout_marginTop="52dp"
+            android:layout_marginRight="16dp">
             <RelativeLayout
                 android:id="@+id/frame_13"
-                android:layout_width="237dp"
+                android:layout_width="match_parent"
                 android:layout_height="28dp">
                 <RelativeLayout
                     android:id="@+id/iconly_bold_plus"
@@ -127,18 +130,18 @@
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/frame_15"
-                android:layout_width="295dp"
+                android:layout_width="match_parent"
                 android:layout_height="28dp"
                 android:layout_marginTop="52dp">
                 <View
                     android:id="@+id/vector_2"
-                    android:layout_width="295dp"
+                    android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:background="@drawable/vector_2"
                     />
                 <RelativeLayout
                     android:id="@+id/frame_14"
-                    android:layout_width="295dp"
+                    android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:layout_marginTop="8dp">
                     <TextView
@@ -161,7 +164,7 @@
                         android:fontFamily="@font/sfprodisplayregular"
                         android:layout_alignBaseline="@id/add_your_ta"
                         android:layout_toEndOf="@id/add_your_ta"
-                        android:layout_marginStart="80dp"
+                        android:layout_marginStart="90dp"
                         android:lineSpacingExtra="6sp"
                         android:translationY="-2.84sp"
                         android:gravity="top"
@@ -170,116 +173,94 @@
             </RelativeLayout>
         </RelativeLayout>
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/frame_13980"
-        android:layout_width="375dp"
+        android:layout_width="match_parent"
         android:layout_height="88dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="724dp"
-        android:clipToOutline="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
         android:background="#F2F9F9"
+        android:clipToOutline="true"
         android:elevation="80dp">
         <View
             android:id="@+id/rectangle_4"
             android:layout_width="28dp"
             android:layout_height="3dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="22dp"
             android:layout_alignParentTop="true"
-            android:background="#24A19C"
-            />
-        <RelativeLayout
+            android:layout_marginLeft="46dp"
+            android:background="#24A19C" />
+        <LinearLayout
             android:id="@+id/frame_50"
-            android:layout_width="328dp"
+            android:layout_width="match_parent"
             android:layout_height="24dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="24dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="22dp">
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
             <RelativeLayout
                 android:id="@+id/iconly_bold_home"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_marginEnd="52dp">
+                android:layout_weight="1">
                 <ImageView
                     android:id="@+id/home"
                     android:layout_width="19dp"
                     android:layout_height="20dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="2.5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="2dp"
                     android:src="@drawable/ic_home_icon"
-                    />
+                    android:layout_centerInParent="true"/>
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/iconly_bold_inbox"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_toRightOf="@+id/iconly_bold_home"
-                android:layout_marginEnd="52dp">
+                android:layout_weight="1">
                 <ImageView
                     android:id="@+id/inbox"
                     android:layout_width="19dp"
                     android:layout_height="20dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="2.5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_inbox_icon"
-                    />
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_inbox_icon" />
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/iconly_bold_calendar"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_toRightOf="@+id/iconly_bold_inbox"
-                android:layout_marginEnd="52dp">
+                android:layout_weight="1">
                 <ImageView
                     android:id="@+id/calendar"
                     android:layout_width="19dp"
                     android:layout_height="20dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="2.5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_celendar_icon"
-                    />
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_celendar_icon" />
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/iconly_bold_category"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_toRightOf="@+id/iconly_bold_calendar"
-                android:layout_marginEnd="52dp">
+                android:layout_weight="1">
                 <ImageView
                     android:id="@+id/category"
                     android:layout_width="19dp"
                     android:layout_height="20dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="2.5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_category_icon"
-                    />
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_category_icon" />
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/icon_bold_paper_plus"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_toRightOf="@+id/iconly_bold_category">
+                android:layout_weight="1">
                 <ImageView
                     android:id="@+id/paper"
                     android:layout_width="19dp"
                     android:layout_height="20dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="2.5dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="2dp"
-                    android:src="@drawable/ic_paper_icon"
-                    />
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_paper_icon" />
             </RelativeLayout>
-        </RelativeLayout>
+        </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
