@@ -13,10 +13,16 @@
         android:theme="@style/Theme.LuBuApp"
         tools:targetApi="31">
         <activity
+            android:name=".DetailTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListTaskActivity"
+            android:exported="false" />
+        <activity
             android:name=".FillTaskActivity"
             android:exported="false"
-            android:windowSoftInputMode="stateVisible|adjustResize"
-            android:theme="@style/Theme.Transparent"/>
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity
             android:name=".HomePageActivity"
             android:exported="true">

@@ -7,4 +7,7 @@
     <string name="today_mon_2">Today. Tues 21 May 2024</string>
     <string name="eg_meeting_">eg : Reply Email</string>
     <string name="description">Description</string>
+    <string name="detail_task">Detail Task</string>
+    <string name="tyiping_">Sub task ...</string>
+    <string name="sub_task">Sub-task</string>
 </resources>

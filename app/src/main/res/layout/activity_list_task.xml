@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListTaskActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_list_task"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="List Task"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/lvtask"
+        android:layout_width="411dp"
+        android:layout_height="706dp"
+        android:layout_marginTop="115dp"
+        android:divider="@null"
+        android:paddingTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/frame_13980"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_shape" />
+
+        <ImageView
+            android:id="@+id/inner_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_plus_list_task" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_13980"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F9F9"
+        android:clipToOutline="true"
+        android:elevation="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvtask"
+        tools:layout_editor_absoluteX="1dp">
+
+        <View
+            android:id="@+id/rectangle_4"
+            android:layout_width="28dp"
+            android:layout_height="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="115dp"
+            android:background="#24A19C" />
+
+        <LinearLayout
+            android:id="@+id/frame_50"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/iconly_bold_home"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_home_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/iconly_bold_inbox"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/inbox"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_inbox_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/iconly_bold_calendar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/calendar"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_celendar_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/iconly_bold_category"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/category"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_category_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/icon_bold_paper_plus"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/paper"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_paper_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
